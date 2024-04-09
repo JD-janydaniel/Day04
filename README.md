@@ -2,7 +2,7 @@
 <h2>Task Description</h2>
 <ol>
   <li>Do the below programs in anonymous function & IIFE</li>
-  <ol>
+  <ol type="a">
     <li>Print odd numbers in an array</li>
     <li>Convert all the strings to title caps in a string array</li>
     <li>Sum of all numbers in an array</li>
@@ -13,7 +13,7 @@
     <li>Rotate an array by k times</li>
   </ol>
   <li>Do the below programs in arrow functions</li>
-  <ol>
+  <ol type="a">
     <li>Print odd numbers in an array</li>
     <li>Convert all the strings to title caps in a string array</li>
     <li>Sum of all numbers in an array</li>
