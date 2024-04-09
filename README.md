@@ -1,6 +1,6 @@
 <h1>Task Day04</h1>
 <h2>Task Description</h2>
-<ol>
+<ol type="1">
   <li>Do the below programs in anonymous function & IIFE</li>
   <ol type="a">
     <li>Print odd numbers in an array</li>
