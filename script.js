@@ -5,7 +5,7 @@
 
 var odd =[];
 var res = function(arr){
-    for( var i=0;i<arr.length;i++){
+    for( let i=0;i<arr.length;i++){
     if(arr[i]%2!=0)
     odd.push(arr[i]);
     }
@@ -16,9 +16,9 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14]));
 // Solution
 // By using IIFE function
 
-var odd =[];
+let odd =[];
 (function(arr){
-    for( var i=0;i<arr.length;i++){
+    for( let i=0;i<arr.length;i++){
     if(arr[i]%2!=0)
     odd.push(arr[i]);
     }
@@ -30,10 +30,10 @@ console.log(odd);
 // By using anonymous function
 
 var titlecase = function (str){
-  var arr=[];  
-  var str1=str.split(' ');
-  for (var i = 0; i < str1.length; i++) {
-  var upper= str1[i].charAt(0).toUpperCase()+ str1[i].substr(1);
+  let arr=[];  
+  let str1=str.split(' ');
+  for (let i = 0; i < str1.length; i++) {
+  let upper= str1[i].charAt(0).toUpperCase()+ str1[i].substr(1);
   arr.push(upper);
    };
     return arr.join(' ');
@@ -44,10 +44,10 @@ var titlecase = function (str){
 // By using IIFE function
 
 (function(str){
-  var arr=[];  
-  var str1=str.split(' ');
-  for (var i = 0; i < str1.length; i++) {
-  var upper= str1[i].charAt(0).toUpperCase()+ str1[i].substr(1);
+  let arr=[];  
+  let str1=str.split(' ');
+  for (let i = 0; i < str1.length; i++) {
+  let upper= str1[i].charAt(0).toUpperCase()+ str1[i].substring(1);
   arr.push(upper);
    };
   console.log( arr.join(' '));
@@ -58,8 +58,8 @@ var titlecase = function (str){
 // By using anonymous function
 
 var sum = 0;
-var res = function(arr){
-    for(var i=0;i<arr.length;i++){
+let res = function(arr){
+    for(let i=0;i<arr.length;i++){
     sum =sum+arr[i];
         }
    return sum;
@@ -69,9 +69,9 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14]));
 // Solution
 // By using IIFE function
  
-var sum = 0;
+let sum = 0;
 (function(arr){
-    for(var i=0;i<arr.length;i++){
+    for(let i=0;i<arr.length;i++){
         sum =sum+arr[i];
             }
       console.log(sum);
@@ -82,14 +82,14 @@ var sum = 0;
 // By using anonymous function
 
 var temp =[];
-var res= function(arr){
-    for( var i=0; i<arr.length;i++){
-      var count = 0;
-      var num = arr[i];
+let res= function(arr){
+    for( let i=0; i<arr.length;i++){
+      let count = 0;
+      let num = arr[i];
       if(num==1){
         continue;
       }
-        for( var j=2;j<num;j++){
+        for( let j=2;j<num;j++){
         if(num%j==0){
         count++;
         
@@ -106,15 +106,15 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]));
 // Solution
 // By using IIFE function
 
-var temp = [];
+let temp = [];
 (function(arr){
-    for( var i=0; i<arr.length;i++){
-        var count = 0;
-        var num = arr[i];
+    for( let i=0; i<arr.length;i++){
+        let count = 0;
+        let num = arr[i];
         if(num==1){
           continue;
         }
-          for( var j=2;j<num;j++){
+          for( let j=2;j<num;j++){
           if(num%j==0){
           count++;
           
@@ -131,8 +131,8 @@ var temp = [];
 // Solution
 // By using anonymous function
 
-var temp =[];
-var res= function(arr){
+let temp =[];
+let res= function(arr){
   for(var i=0;i<arr.length;i++){
     var num = arr[i].split("").reverse().join("");
     if(num==arr[i]){
@@ -146,10 +146,10 @@ console.log(res(["appa","amma","car","bird","malayalam"]));
 // Solution
 // By using IIFE function
 
-var temp = [];
+let temp = [];
 (function(arr){
-    for(var i=0;i<arr.length;i++){
-      var num = arr[i].split("").reverse().join("");
+    for(let i=0;i<arr.length;i++){
+      let num = arr[i].split("").reverse().join("");
       if(num==arr[i]){
         temp.push(num);
          }
@@ -161,13 +161,13 @@ var temp = [];
 // Solution
 // By using anonymous function
 
-var res=function (arr1,arr2){
-  var arr3=arr1.concat(arr2);
-  var newArray=arr3.sort(function(a,b){
+let res =function (arr1,arr2){
+  let arr3=arr1.concat(arr2);
+  let newArray=arr3.sort(function(a,b){
     return a-b;
   });
-  var length=newArray.length;
-  var middleIndex=length/2;
+  let length=newArray.length;
+  let middleIndex=length/2;
   if(length%2==0){
     return(newArray[middleIndex-1]+newArray[middleIndex])/2
   }
@@ -181,12 +181,12 @@ console.log(res([4,6,3,1,7],[2,5,8,9,10]));
 // By using IIFE function
 
 (function(arr1,arr2){
-  var arr3=arr1.concat(arr2);
-  var newArray=arr3.sort(function(a,b){
+  let arr3=arr1.concat(arr2);
+  let newArray=arr3.sort(function(a,b){
     return a-b;
   });
-  var length=newArray.length;
-  var middleIndex=length/2;
+  let length=newArray.length;
+  let middleIndex=length/2;
   if(length%2==0){
     console.log((newArray[middleIndex-1]+newArray[middleIndex])/2);
   }
@@ -200,9 +200,9 @@ console.log(res([4,6,3,1,7],[2,5,8,9,10]));
 // Solution
 // By using anonymous function
 
-var res = function(arr) {
-    var unique = [];
-    for ( var i = 0; i < arr.length; i++) {
+let res = function(arr) {
+    let unique = [];
+    for ( let i = 0; i < arr.length; i++) {
         if (unique.indexOf(arr[i]) === -1) {
             unique.push(arr[i]);
         }
@@ -215,8 +215,8 @@ console.log(res([2,3,5,7,6,3,8,2]));
 // By using IIFE function
 
 (function res(arr){
-    var unique = [];
-    for ( var i = 0; i < arr.length; i++) {
+    let unique = [];
+    for ( let i = 0; i < arr.length; i++) {
         if (unique.indexOf(arr[i]) === -1) {
             unique.push(arr[i]);
         }
@@ -228,7 +228,7 @@ console.log(res([2,3,5,7,6,3,8,2]));
 // Solution
 // By using anonymous function
 
-var rotate = function (arr,n) {
+let rotate = function (arr,n) {
   for (let i = 0; i < n; i++) {
    arr.unshift(arr.pop());
   }
@@ -252,9 +252,9 @@ console.log(rotate([1,2,3,4,5,6],2));
 // Solution
 // By using arrow function
 
-var odd =[];
-var res =(arr)=>{
-    for( var i=0;i<arr.length;i++){
+let odd =[];
+let res =(arr)=>{
+    for( let i=0;i<arr.length;i++){
     if(arr[i]%2!=0)
     odd.push(arr[i]);
     }
@@ -266,11 +266,11 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14]));
 // Solution
 // By using arrow function
 
-var titlecase = (str)=>{
-  var arr=[];  
-  var str1=str.split(' ');
-  for (var i = 0; i < str1.length; i++) {
-  var upper= str1[i].charAt(0).toUpperCase()+ str1[i].substr(1);
+let titlecase = (str)=>{
+  let arr=[];  
+  let str1=str.split(' ');
+  for (let i = 0; i < str1.length; i++) {
+  let upper= str1[i].charAt(0).toUpperCase()+ str1[i].substring(1);
   arr.push(upper);
    };
     return arr.join(' ');
@@ -281,9 +281,9 @@ var titlecase = (str)=>{
 // Solution
 // By using attow function
 
-var sum = 0;
-var res = (arr)=>{
-    for(var i=0;i<arr.length;i++){
+let sum = 0;
+let res = (arr)=>{
+    for(let i=0;i<arr.length;i++){
     sum =sum+arr[i];
         }
    return sum;
@@ -294,15 +294,15 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14]));
 // Solution
 // By using arrow function
 
-var temp =[];
-var res=(arr)=>{
-    for( var i=0; i<arr.length;i++){
-      var count = 0;
-      var num = arr[i];
+let temp =[];
+let res=(arr)=>{
+    for( let i=0; i<arr.length;i++){
+      let count = 0;
+      let num = arr[i];
       if(num==1){
         continue;
       }
-        for( var j=2;j<num;j++){
+        for( let j=2;j<num;j++){
         if(num%j==0){
         count++;
         
@@ -320,10 +320,10 @@ console.log(res([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]));
 // Solution
 // By using arrow function
 
-var temp =[];
-var res=(arr)=>{
-  for(var i=0;i<arr.length;i++){
-    var num = arr[i].split("").reverse().join("");
+let temp =[];
+let res=(arr)=>{
+  for(let i=0;i<arr.length;i++){
+    let num = arr[i].split("").reverse().join("");
     if(num==arr[i]){
       temp.push(num);
        }
