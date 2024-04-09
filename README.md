@@ -21,4 +21,4 @@
     <li>Return all the palindromes in an array</li>
   </ol>
 </ol>
-Here I have solved the above mentioned problems by using JavaScript function
+<h4>Here I have solved the above mentioned problems by using JavaScript function</h4>
